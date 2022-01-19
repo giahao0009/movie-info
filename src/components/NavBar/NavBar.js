@@ -36,7 +36,7 @@ function NavBar() {
     }
 
     const handleGoHome = () => {
-        navigate('/movie-info')
+        navigate('/')
     }
 
     return (
