@@ -1,0 +1,8 @@
+export const SET_MOVIES_POPULAR = 'set_movies_popular'
+export const SET_MOVIES_NOW_PLAYING = 'set_movies_now_playing'
+export const SET_MOVIES_RATED = 'set_movies_rated'
+export const SET_TV_POPULAR = 'set_tv_popular'
+export const SET_TV_RATED = 'set_tv_rated'
+export const GET_SEARCH_MOVIES = 'get_search_movies'
+export const OPEN_MODAL = 'open_modal'
+export const GET_VIDEO = 'get_video'

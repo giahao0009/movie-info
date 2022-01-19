@@ -1,0 +1,97 @@
+@import '../../scss/App.scss';
+
+.slider{
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    font-size: 18px;
+    height: 100vh;
+    .swiper-image{
+      @include size(100%);
+      @include flex(flex-start, space-between);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: inset 0px -90px 50px -10px $body-bg, inset 0 0 0 1000px rgba(0,0,0,0.3);
+      padding: 150px 300px;
+      border: none;
+      @include tablet {
+        padding: 150px 100px;
+      }
+      img{
+        max-width: 300px;
+        border-radius: 20px;
+        box-shadow: $box-shadow;
+        animation: 1s ease-in-out 0s 1 slideInFromTop;
+        @include tablet{
+          max-width: 200px;
+        }
+      }
+      .description {
+        color: $text-color;
+        text-align: start;
+        margin-left: 4rem;
+        animation: 1s ease-in-out 0s 1 slideInFromTop;
+        
+        h1{
+          font-size: 3rem;
+          color: $main-color;
+          @include tablet {
+            font-size: 2rem;
+          }
+        }
+        p{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+        }
+        .control button {
+          margin-right: 20px;
+          @include tablet {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile{
+  .slider{
+    .swiper-slide{
+      .swiper-image{
+        font-size: 15px;
+        background-position:center;
+        padding: 45px 10px;
+        justify-content: center;
+        align-items: center;
+        img{
+          display: none;
+        }
+        .description{
+          height: 100%;
+          h1{
+            font-size: 25px;
+            margin: 0px;
+          }
+          p{
+            margin-top: 0px;
+          }
+          .control{
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            & button {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

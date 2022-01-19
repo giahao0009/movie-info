@@ -1,0 +1,18 @@
+@import '../../scss/App.scss';
+
+.list-genres {
+    li{
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid $white;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        &:hover {
+            cursor: pointer;
+            color: $main-color;
+            border-color: $main-color;
+            transition: all .5s ease-in-out;
+        }
+    }
+}
