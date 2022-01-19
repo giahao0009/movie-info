@@ -22,7 +22,7 @@ function Detail() {
                     .then(res => setMovie(res.data))
         }
         getDetail()
-    }, [])
+    }, [key])
 
     useEffect(() => {
         const getSimilar = async () => {
