@@ -8,7 +8,7 @@ import SearchMoviePage from './pages/SearchMoviePage/SearchMoviePage'
 function RoutesDom() {
     return (
         <Routes>
-            <Route exact path="/" element={<Homepage/>}/>
+            <Route exact path="movie-info/" element={<Homepage/>}/>
             <Route path="movies" element={<Movies/>}/>
             <Route path="detail" element={<Detail/>}/>
             <Route path="*" element={<NotFound/>}/>
