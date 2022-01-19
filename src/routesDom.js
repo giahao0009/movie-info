@@ -9,10 +9,10 @@ function RoutesDom() {
     return (
         <Routes>
             <Route exact path="movie-info/" element={<Homepage/>}/>
-            <Route path="movies" element={<Movies/>}/>
-            <Route path="detail" element={<Detail/>}/>
+            <Route path="movie-info/movies" element={<Movies/>}/>
+            <Route path="movie-info/detail" element={<Detail/>}/>
             <Route path="*" element={<NotFound/>}/>
-            <Route path="searchMovie" element={<SearchMoviePage />}/>
+            <Route path="movie-info/searchMovie" element={<SearchMoviePage />}/>
         </Routes>
     )
 }
