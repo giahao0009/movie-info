@@ -1,7 +1,12 @@
 @import "../../scss/App.scss";
 
-.list-search-movie {
+.title-genes {
   margin-top: 80px;
+  padding: 20px 160px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.movie-with-genes {
   padding: 20px 10px;
   text-align: center;
   display: grid;
